@@ -8,16 +8,18 @@
   category: "Category 1"
   }
 */
-
+//ProductItem component to display product details in a card like format with an image and table of details
 import { object } from "prop-types";
 
 const ProductItem = ({product}) => {
     return (
-        <div className="product-item">
+        <div className="product-item" id={"product-" + product.id}>
             <div className="product-image">
+                {/* Product image with alt text as product name */}
                 <img src={product.image} alt={product.name} />
             </div>
             <div className="product-details">
+                {/* Product details table with product name as the title */}
                 <table className="product-table">
                     <thead>
                         <tr>
@@ -33,10 +35,6 @@ const ProductItem = ({product}) => {
                             <th scope="row">Price:</th>
                             <td>${product.price.toFixed(2)}</td>
                         </tr>
-                        <tr>
-                            <th scope="row">Category:</th>
-                            <td>{product.category}</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -44,6 +42,7 @@ const ProductItem = ({product}) => {
     )
 }
 
+//default props for the ProductItem component to display a placeholder product if no product is passed as props
 ProductItem.defaultProps = {
     product: {
         id: 0,
@@ -55,6 +54,7 @@ ProductItem.defaultProps = {
     }
 };
 
+//prop types for the ProductItem component to validate the product object passed as props
 ProductItem.propTypes = {
     product: object
 };

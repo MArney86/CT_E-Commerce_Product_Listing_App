@@ -1,12 +1,24 @@
-# React + Vite
+# E-commerce Product Listing App for Coding Temple Software Engineering Course
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Assignment App requirements
 
-Currently, two official plugins are available:
+This project I will begin building a simple E-commerce product listing site using React. 
+It will help with organizing code using React components, managing state using the useState hook, and passing and managing data through props between components. 
+Frameworks like Bootstrap will not be used, focusing on custom styling instead.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The App Component:
+- Create a state that holds the list of products
+- Pass the list of Products to ProductList Component
+- Style the main structure of the App with CSS
 
-## Expanding the ESLint configuration
+The ProductList Component
+- Create a Component that recieves the Products list as a prop and map through it
+- For each product, render a ProductItem Component
+- Apply custom CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The ProductItem Component
+- Display the objects name, price, description, and an image for the item (bonus)
+- Style each item using custom CSS to distinguish each product
+- Use props to pass down product details to this component
+
+## How to use the App

@@ -1,3 +1,4 @@
+/* CSS file for the E-commerce Product Listing App main components */
 #root {
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@
     padding: 1rem 0;
 }
 
+/* Product list styling */
 .product-list {
     display: grid;
     align-items: center;
@@ -31,6 +33,7 @@
     padding: .5rem 0;
 }
 
+/* Responsive styling for the product container and list */
 @media screen and (min-width: 1600px) {
     .product-container {
         max-width: 1600px;
@@ -75,6 +78,7 @@
     }
 }
 
+/*ProductItem styling*/
 .product-list .product-item {
     display: flex;
     flex-direction: column;
@@ -98,6 +102,7 @@
     border-radius: 5px;
 }
 
+/*ProductItem table styling*/
 .product-list .product-item .product-details .product-table {
     color: rgb(22, 16, 36);
     border: 1px solid rgb(22, 16, 36);
@@ -123,7 +128,32 @@
     text-align: center;
 }
 
-th:hover, td:hover {
+/* Hover effect for table cells to highlight hovered over cell*/
+tbody th:hover, tbody td:hover {
     background-color: #a9ffe2;
     color: rgb(22, 16, 36);
+}
+
+#product-1 {
+
+}
+
+#product-2 {
+
+}
+
+#product-3 {
+
+}
+
+#product-4 {
+
+}
+
+#product-5 {
+
+}
+
+#product-6 {
+
 }

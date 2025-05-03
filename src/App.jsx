@@ -2,18 +2,10 @@ import './ProductStyles.css'
 import { useState } from 'react';
 import ProductList from './ProductList';
 
-/* Product data organization
-{
-  id: 1,
-  name: "Product 1",
-  description: "Description of Product 1",
-  price: 19.99,
-  image: "https://via.placeholder.com/150",
-  category: "Category 1"
-  }
-*/
-
+//main App component to manage the product list and display the ProductList component
 function App() {
+
+  //state to manage the product list
   const [showProductList, setShowProductList] = useState([
     { id: 1, name: 'Product 1', description: 'Description of Product 1', price: 19.99, image: 'https://picsum.photos/200', category: 'Category 1' },
     { id: 2, name: 'Product 2', description: 'Description of Product 2', price: 21.99, image: 'https://picsum.photos/250', category: 'Category 2' },
@@ -26,6 +18,7 @@ function App() {
   return (
     <div className="product-container">
       <h1>E-Commerce Store</h1>
+      {/*Product list component with ProductList object passed as props from showProductList state*/}
       <ProductList products={showProductList} />
       
     </div>
