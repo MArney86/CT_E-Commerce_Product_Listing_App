@@ -1,10 +1,15 @@
 /* CSS file for the E-commerce Product Listing App main components */
+:root {
+    --products-txt-light: #f0f0f0; /* Light text color for product items */
+    --products-txt-dark: #000000; /* Dark text color for product items */
+}
+
 #root {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(22, 16, 36);
+    background-color: var(--products-txt-dark);
     height: 100vh;
     width: 100vw;
 }
@@ -18,6 +23,7 @@
     border: 2px solid #a9ffe2;
     border-radius: 50px;
     background-color: cadetblue;
+    padding: 1rem 0;
 }
 
 .product-container h1 {
@@ -89,6 +95,7 @@
     background-color: #f0f0f0;
     transition: transform 0.2s, box-shadow 0.2s;
     max-width: 300px;
+    margin: 1rem;
 }
 
 .product-list .product-item:hover {
@@ -104,26 +111,26 @@
 
 /*ProductItem table styling*/
 .product-list .product-item .product-details .product-table {
-    color: rgb(22, 16, 36);
-    border: 1px solid rgb(22, 16, 36);
+    color: var(--products-txt-dark);
+    border: 1px solid var(--products-txt-dark);
     margin: .5rem;
     border-collapse: collapse;
 }
 
 .product-table thead tr th {
-    border-bottom: 2px solid rgb(22, 16, 36);
+    border-bottom: 2px solid var(--products-txt-dark);
     padding: 0.25rem;
 }
 
 .product-table tbody tr th {
-    border-right: 1px solid rgb(22, 16, 36);
-    border-bottom: 1px solid rgb(22, 16, 36); 
+    border-right: 1px solid var(--products-txt-dark);
+    border-bottom: 1px solid var(--products-txt-dark); 
     padding: 0.25rem;
     text-align: center;
 }
 
 .product-table tbody tr td {
-    border-bottom: 1px solid rgb(22, 16, 36); 
+    border-bottom: 1px solid var(--products-txt-dark); 
     padding: 0.25rem;
     text-align: center;
 }
@@ -131,29 +138,34 @@
 /* Hover effect for table cells to highlight hovered over cell*/
 tbody th:hover, tbody td:hover {
     background-color: #a9ffe2;
-    color: rgb(22, 16, 36);
+    color: var(--products-txt-dark);
 }
 
+/* product specific styling*/
 #product-1 {
-
+    background-color: darkorchid;
 }
 
 #product-2 {
-
+    background-color: darkorange;
 }
 
 #product-3 {
-
+    background-color: darkred;
 }
 
 #product-4 {
-
+    background-color: darkgreen;
 }
 
 #product-5 {
-
+background-color: darkkhaki;
 }
 
 #product-6 {
+background-color:darkblue;
+}
 
+#product-6 table {
+    color: var(--products-txt-light);
 }

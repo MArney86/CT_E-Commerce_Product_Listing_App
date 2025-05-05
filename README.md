@@ -22,3 +22,9 @@ The ProductItem Component
 - Use props to pass down product details to this component
 
 ## How to use the App
+
+Download and extract the repository, or clone the repository to your desired location.
+
+Open your preferred terminal and navigate to where you extracted/cloned the repository and run `npm install` to download all dependencies needed to run the app.
+
+At this point, you can use either the command `npm run dev` to run the app in developer mode. Or, you can build the app for deployment using the command `npm run build` and them using `npm run preview` to preview the build and ensure proper functioning.
