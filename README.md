@@ -28,3 +28,5 @@ Download and extract the repository, or clone the repository to your desired loc
 Open your preferred terminal and navigate to where you extracted/cloned the repository then enter the ecom-product-app folder and run `npm install` to download all dependencies needed to run the app.
 
 At this point, you can use either the command `npm run dev` to run the app in developer mode. Or, you can build the app for deployment using the command `npm run build` and them using `npm run preview` to preview the build and ensure proper functioning.
+
+The app should show information about 6 products with differing stylings in a responsive container that shows differing numbers of products per row based on the size of the viewscreen.
